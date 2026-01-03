@@ -44,7 +44,7 @@ pipeline {
     stage('Send Email Notification') {
       steps {
         script {
-         emailtext(
+         emailext(
           subject: "Nestjs App Deployed Successful",
           body: "Your Nestjs application has been successfully deployed and is running on  http://192.168.100.7:${PORT}.",
           to: "${EMAIL}"
