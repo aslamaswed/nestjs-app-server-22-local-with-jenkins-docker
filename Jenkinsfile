@@ -11,7 +11,7 @@ pipeline {
   stages {
     stage('clone repository') {
       steps{
-          git branch: 'main', url: 'git@github.com:aslamaswed/nestjs-app-server-22-local-with-jenkins-docker.git'
+          git branch: 'main', url: 'https://github.com/aslamaswed/nestjs-app-server-22-local-with-jenkins-docker'
       }
     }
 
